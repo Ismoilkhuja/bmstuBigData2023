@@ -1,10 +1,10 @@
+import java.util.Scanner;
+
 /*
- * Практика #1, часть 2
+ * Практика 1, вариант 2, задание 14
  * Ввести с консоли n целых чисел и поместить их в массив. На консоль вывести:
  * элементы, которые равны полусумме соседних элементов.
  */
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
