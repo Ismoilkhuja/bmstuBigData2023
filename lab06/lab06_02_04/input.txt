@@ -1,0 +1,10 @@
+Object1;24
+Object2;62
+Object3;33
+Object4;14
+Object5;81
+Object6;33
+Object3;56
+Object8;34
+Object1;94
+Object10;15

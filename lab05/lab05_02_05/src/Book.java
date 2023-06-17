@@ -86,16 +86,16 @@ public class Book {
         return binding;
     }
 
-    public boolean hasAuthor(String author){
-        try {
-            for (String auth : authors) {
-                if (auth.equals(author))
-                    return true;
-            }
-        } catch (NullPointerException e){
-            System.out.println("I am here");
-            return false;
+    public boolean hasAuthor(String author) throws AuthorException{
+        if (author.equals("")){
+            throw new AuthorException("Ошибка: Название автора пустой.");
         }
+
+        for (String auth : authors) {
+            if (auth.equals(author))
+                return true;
+        }
+
         return false;
     }
 

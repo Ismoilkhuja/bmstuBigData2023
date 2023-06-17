@@ -20,8 +20,13 @@ public class Main {
         System.out.println("Список книг заданного автора:");
         String author = "Adam";
         for (Book book : books) {
-            if (book.hasAuthor(author))
-                System.out.println(book);
+
+            try {
+                if (book.hasAuthor(author))
+                    System.out.println(book);
+            } catch (AuthorException e) {
+                e.printStackTrace();
+            }
         }
         System.out.println();
 
@@ -47,7 +52,11 @@ public class Main {
 
         Book as = new Book();
 
-        as.hasAuthor("ASdasda");
+        try {
+            as.hasAuthor("");
+        } catch (AuthorException e) {
+            e.printStackTrace();
+        }
 
 
         /*
